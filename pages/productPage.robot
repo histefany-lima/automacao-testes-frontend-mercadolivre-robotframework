@@ -3,9 +3,11 @@ Library           SeleniumLibrary
 Resource          ../baseResources/resources.robot
 
 *** Variables ***
-${botaoAdicionarAoCarrinho}  //*[@id=":R2cqakck4um:"]
+${botaoAdicionarAoCarrinho}  //html/body/main/div[2]/div[5]/div[2]/div[1]/div/div[1]/div/div[7]/form/div/button[2]/span
 *** Keywords ***
 Clico em Adicionar ao carrinho
+    Log To Console  Clicando no botão Adicionar ao carrinho...
+    Page Should Contain Element  ${botaoAdicionarAoCarrinho}
     Click Element    ${botaoAdicionarAoCarrinho}
     Capture Page Screenshot
 
