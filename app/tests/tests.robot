@@ -1,5 +1,4 @@
 *** Settings ***
-Library           SeleniumLibrary
 Resource         ../steps/homeSteps.robot
 Resource         ../steps/searchSteps.robot
 Resource         ../steps/productSteps.robot
