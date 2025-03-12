@@ -1,5 +1,4 @@
 *** Settings ***
-Library           SeleniumLibrary
 Resource          ../pages/homePage.robot
 
 
